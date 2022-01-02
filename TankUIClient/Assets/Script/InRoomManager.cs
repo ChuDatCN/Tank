@@ -60,6 +60,8 @@ public class InRoomManager : MonoBehaviour
             if (listing != null) listing.SetPlayerInfo(info);
         }
 
+        StartButton.SetActive(true);
+
         if (Client.instance.id != Client.instance.hostId)
         {
             StartButton.SetActive(false);
@@ -68,6 +70,8 @@ public class InRoomManager : MonoBehaviour
         {
             StartButton.SetActive(false);
         }
+
+
     }
 
     public void Back()
